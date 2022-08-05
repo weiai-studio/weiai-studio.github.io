@@ -2,14 +2,57 @@
 <head>
     <meta charset="UTF-8">
     <title>唯爱工作室官方文章</title>
+    <style>
+        #bigbox{
+            background-color: rgba(255,255,255,60%);
+            border-radius: 70px;
+            padding: 50px;
+            margin:100px;
+            animation: box 5s;
+        }
+        body{
+            background-image: url("img/news.png");
+            background-size: cover;
+        }
+        p,h1{
+            text-align: center;
+            animation: text 5s;
+        }
+        a{
+            text-underline: none;
+            color: rgba(0,0,0,60%);
+            display: block;
+        }
+        a:hover{
+            color: rgba(0,200,0,90%);
+        }
+        @keyframes box{
+            from{
+                width: 30%;
+                margin-top: 30%;
+            }
+            to{
+                width: 80%;
+                margin-top:100px;
+            }
+        }
+        @keyframes text{
+            from{
+                color: rgba(0,0,0,0);
+            }
+            to{
+                color: rgba(0,0,0,100%);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎来到唯爱工作室文章放送</h1>
-    <p><a href="txt/新闻放送20220622.html" target="_blank">新闻放送20220622------唯爱官方</a></p>
-    <p><a href="txt/新闻放送20220612.html" target="_blank">新闻放送20220612------唯爱官方</a></p>
-    <p><a href="txt/新闻放送20220611.html" target="_blank">新闻放送20220611------唯爱留梦灵溪</a></p>
-    <p><a href="txt/新闻放送20220524.html" target="_blank">新闻放送20220524------唯爱官方</a></p>
-    <p><a href="txt/新闻放送20210810.html" target="_blank">新闻放送20210810------唯爱响当当</a></p>
-
+    <div id="bigbox">
+        <h1>欢迎来到唯爱工作室文章放送</h1>
+        <p><a href="txt/新闻放送20220622.html" target="_blank">新闻放送20220622------唯爱官方</a></p>
+        <p><a href="txt/新闻放送20220612.html" target="_blank">新闻放送20220612------唯爱官方</a></p>
+        <p><a href="txt/新闻放送20220611.html" target="_blank">新闻放送20220611------唯爱留梦灵溪</a></p>
+        <p><a href="txt/新闻放送20220524.html" target="_blank">新闻放送20220524------唯爱官方</a></p><p><a href="txt/新闻放送20210810.html" target="_blank">新闻放送20210810------唯爱响当当</a></p>
+    </div>
 </body>
 </html>
